@@ -3,5 +3,5 @@ main:
   - title: "Home"
     url:  "README.html" 
   - title: "Overview"
-    url: "/Mywebsite.html"  # Link to your call for papers page
+    url: "/Mywebsite.html"  
  
