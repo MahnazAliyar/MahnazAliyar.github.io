@@ -5,7 +5,7 @@ A small, dependency-free static site (plain HTML and CSS) served by GitHub Pages
 | Page | File |
 | --- | --- |
 | Home | `index.html` |
-| CV | `cv/index.html` |
+| Resume | `resume/index.html` |
 | Research | `research/index.html` |
 | Interests | `interests/index.html` |
 
