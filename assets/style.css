@@ -226,7 +226,16 @@ section:first-child { margin-top: 0; }
 .prose h2 { margin-top: 2.5rem; }
 .prose h2:first-child { margin-top: 0; }
 
-.gallery { columns: 3 15rem; column-gap: 1rem; margin-top: 3rem; }
+.gallery { column-count: 2; column-gap: 1rem; margin-top: 3rem; }
+/* Break points are set by hand so the columns end level (2 columns on phones, 3 on wider screens) */
+.gallery .b2 { break-after: column; }
+@media (min-width: 52rem) {
+  .gallery { column-count: 3; }
+  .gallery .b2 { break-after: auto; }
+  .gallery .b3 { break-after: column; }
+}
+.gallery figure.sq img { aspect-ratio: 1 / 1; object-fit: cover; }
+.gallery figure.r115 img { aspect-ratio: 20 / 23; object-fit: cover; }
 .gallery figure {
   margin: 0 0 1rem; break-inside: avoid; overflow: hidden; position: relative;
   border-radius: var(--radius); background: var(--tint); box-shadow: var(--shadow);
@@ -263,7 +272,7 @@ section:first-child { margin-top: 0; }
   body { font-size: 1rem; }
   .entry, .year-group, .kv { grid-template-columns: 1fr; gap: .1rem; }
   .entry .when { order: -1; }
-  .gallery { columns: 2 10rem; column-gap: .75rem; }
+  .gallery { column-gap: .75rem; }
   .gallery figure { margin-bottom: .75rem; }
   main { padding-block: 1.75rem 3rem; }
 }
