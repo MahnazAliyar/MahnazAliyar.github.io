@@ -178,7 +178,7 @@ section:first-child { margin-top: 0; }
 .skill-col { display: grid; gap: 1rem; }
 @media (max-width: 40rem) { .skill-cols { grid-template-columns: 1fr; } }
 .skill-card.skill-card-compact { padding-block: .85rem; }
-.skill-card.skill-card-compact h3 { margin: 0; font-size: 1rem; text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--ink); }
+.skill-card.skill-card-compact h3 { margin: 0; }
 .skill-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.25rem; }
 .skill-card h3 { font-family: var(--sans); font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--accent); margin: 0 0 .75rem; }
 .tags-sm li { font-size: .9rem; padding: .3rem .75rem; }
