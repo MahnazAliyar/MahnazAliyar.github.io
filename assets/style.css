@@ -82,7 +82,7 @@ nav a[aria-current="page"] { background: var(--tint-strong); color: var(--accent
 /* ---------- Banner ---------- */
 .banner { margin-top: 1.5rem; position: relative; }
 .credit {
-  position: absolute; right: .9rem; bottom: .6rem; font-size: .72rem; letter-spacing: .02em;
+  position: absolute; right: .55rem; bottom: .35rem; font-size: .6rem; letter-spacing: .02em;
   color: rgba(255, 255, 255, .88); text-shadow: 0 1px 3px rgba(0, 0, 0, .55); pointer-events: none;
 }
 .banner img {
@@ -246,19 +246,19 @@ section:first-child { margin-top: 0; }
 }
 .gallery img { width: 100%; height: auto; }
 .gallery figure::before {
-  content: ""; position: absolute; inset: 0 0 auto 0; height: 3rem; pointer-events: none;
-  background: linear-gradient(rgba(30, 20, 55, .5), transparent);
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 2.1rem; pointer-events: none;
+  background: linear-gradient(rgba(30, 20, 55, .45), transparent);
 }
 .gallery figure::after {
   z-index: 1;
-  content: "© Mahnaz Aliyar"; position: absolute; top: .6rem; right: .75rem;
-  font-size: .72rem; letter-spacing: .02em; color: rgba(255, 255, 255, .9);
+  content: "© Mahnaz Aliyar"; position: absolute; top: .35rem; right: .55rem;
+  font-size: .6rem; letter-spacing: .02em; color: rgba(255, 255, 255, .9);
   text-shadow: 0 1px 3px rgba(0, 0, 0, .6); pointer-events: none;
 }
 .gallery figure[data-credit]::after { content: attr(data-credit); }
 /* Graphics (not photos): credit sits at the bottom so it does not cover the artwork */
-.gallery figure.graphic::before { inset: auto 0 0 0; height: 2.5rem; background: linear-gradient(transparent, rgba(30, 20, 55, .55)); }
-.gallery figure.graphic::after { top: auto; bottom: .6rem; }
+.gallery figure.graphic::before { inset: auto 0 0 0; height: 2rem; background: linear-gradient(transparent, rgba(30, 20, 55, .55)); }
+.gallery figure.graphic::after { top: auto; bottom: .35rem; }
 .gallery figcaption {
   position: absolute; inset: auto 0 0 0; padding: 1.75rem 1rem .75rem; font-size: .88rem; color: #fff;
   background: linear-gradient(transparent, rgba(30, 20, 55, .72));
